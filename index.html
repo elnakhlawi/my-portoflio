@@ -9,6 +9,18 @@
     <link rel="stylesheet" href="assets/css/global.css" />
   </head>
   <body>
+    <canvas id="bg-canvas"></canvas>
+    <header class="site-header">
+      <div class="header-content">
+        <div class="site-logo">Mahmoud ElNakhlawy</div>
+        <nav class="site-nav">
+          <a href="#" class="welcome nav-link">Welcome</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+        </nav>
+      </div>
+    </header>
     <div class="container">
       <h1>مرحبا انا محمود</h1>
       <p>مطور مواقع ويب</p>
@@ -16,32 +28,6 @@
         <button id="helloBton">دوس عليا كده</button>
         <p id="message"></p>
       </div>
-      <div class="contact-us">
-        <h2>راسلني 📬</h2>
-        <form id="contactForm">
-          <input
-            type="text"
-            placeholder=" اسمك هنا من فضلك"
-            id="name"
-            required
-          />
-          <input
-            type="email"
-            placeholder="الايميل من فضلك"
-            id="email"
-            required
-          />
-          <input type="tel" placeholder="رقمك من فضلك" id="tel" required />
-          <textarea
-            id="msgInput"
-            placeholder="اترك رسالتك "
-            required
-          ></textarea>
-          <button type="submit">تواصل</button>
-        </form>
-        <p id="formMsg"></p>
-      </div>
-
       <div class="skills">
         <h2>مهاراتي 💼</h2>
         <ul class="my-skills">
@@ -58,70 +44,300 @@
         <h2>🧪مشاريعي 🧪</h2>
         <div class="projects">
           <div class="project">
-            <h3>Sales-Management-System</h3>
-            <p>Sales Management System (CRUD) with HTML,Css&JS</p>
-            <a  target="_blank" href="https://elnakhlawi.github.io/Sales-Management-System/"
-              >من هنا</a
-            >
+            <img
+              class="project__image"
+              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80"
+              alt="Sales Management System Preview"
+            />
+            <div class="project__body">
+              <div class="project__title">Sales-Management-System</div>
+              <div class="project__desc">
+                Sales Management System (CRUD) with HTML, CSS & JS
+              </div>
+              <div class="project__badges">
+                <span class="project__badge">HTML5</span>
+                <span class="project__badge">CSS3</span>
+                <span class="project__badge">JavaScript</span>
+              </div>
+              <a
+                class="project__btn"
+                target="_blank"
+                href="https://elnakhlawi.github.io/Sales-Management-System/"
+                >View Demo</a
+              >
+            </div>
           </div>
           <div class="project">
-            <h3>to-do-list</h3>
-            <p>to-do-list to save your tasks (HTML &Css and JS)</p>
-            <a target="_blank" href="https://elnakhlawi.github.io/to-do-list/">من هنا</a>
+            <img
+              class="project__image"
+              src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"
+              alt="To-Do List Preview"
+            />
+            <div class="project__body">
+              <div class="project__title">to-do-list</div>
+              <div class="project__desc">
+                to-do-list to save your tasks (HTML & CSS and JS)
+              </div>
+              <div class="project__badges">
+                <span class="project__badge">HTML5</span>
+                <span class="project__badge">CSS3</span>
+                <span class="project__badge">JavaScript</span>
+              </div>
+              <a
+                class="project__btn"
+                target="_blank"
+                href="https://elnakhlawi.github.io/to-do-list/"
+                >View Demo</a
+              >
+            </div>
           </div>
           <div class="project">
-            <h3>to-do-list2</h3>
-            <p>
-              to-do-list to save your tasks (HTML &Css and JS)with localStorage
-            </p>
-            <a target="_blank" href="https://elnakhlawi.github.io/to-do-list2/">من هنا</a>
+            <img
+              class="project__image"
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+              alt="To-Do List 2 Preview"
+            />
+            <div class="project__body">
+              <div class="project__title">to-do-list2</div>
+              <div class="project__desc">
+                to-do-list to save your tasks (HTML & CSS and JS) with
+                localStorage
+              </div>
+              <div class="project__badges">
+                <span class="project__badge">HTML5</span>
+                <span class="project__badge">CSS3</span>
+                <span class="project__badge">JavaScript</span>
+              </div>
+              <a
+                class="project__btn"
+                target="_blank"
+                href="https://elnakhlawi.github.io/to-do-list2/"
+                >View Demo</a
+              >
+            </div>
           </div>
           <div class="project">
-            <h3>Among Us Char</h3>
-            <p>Creating an Among Us character using only HTML and CSS</p>
-            <a  target="_blank"href="https://elnakhlawi.github.io/Among-Us-Char/">من هنا</a>
+            <img
+              class="project__image"
+              src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80"
+              alt="Among Us Char Preview"
+            />
+            <div class="project__body">
+              <div class="project__title">Among Us Char</div>
+              <div class="project__desc">
+                Creating an Among Us character using only HTML and CSS
+              </div>
+              <div class="project__badges">
+                <span class="project__badge">HTML5</span>
+                <span class="project__badge">CSS3</span>
+              </div>
+              <a
+                class="project__btn"
+                target="_blank"
+                href="https://elnakhlawi.github.io/Among-Us-Char/"
+                >View Demo</a
+              >
+            </div>
           </div>
           <div class="project">
-            <h3>Template-One-leno</h3>
-            <p>
-              A single-page introductory website with multiple sections that
-              presents the company's services, an overview, and some of its
-              work.
-            </p>
-            <a target="_blank" href="https://elnakhlawi.github.io/Template-One-leno/">من هنا</a>
+            <img
+              class="project__image"
+              src="https://images.unsplash.com/photo-1465101178521-c1a9136a3fdc?auto=format&fit=crop&w=600&q=80"
+              alt="Template-One-leno Preview"
+            />
+            <div class="project__body">
+              <div class="project__title">Template-One-leno</div>
+              <div class="project__desc">
+                A single-page introductory website with multiple sections that
+                presents the company's services, an overview, and some of its
+                work.
+              </div>
+              <div class="project__badges">
+                <span class="project__badge">HTML5</span>
+                <span class="project__badge">CSS3</span>
+              </div>
+              <a
+                class="project__btn"
+                target="_blank"
+                href="https://elnakhlawi.github.io/Template-One-leno/"
+                >View Demo</a
+              >
+            </div>
           </div>
           <div class="project">
-            <h3>template-two-Kasper</h3>
-            <p>template HTML and Css</p>
-            <a target="_blank" href="https://elnakhlawi.github.io/template-two-Kasper/"
-              >من هنا</a
-            >
+            <img
+              class="project__image"
+              src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"
+              alt="template-two-Kasper Preview"
+            />
+            <div class="project__body">
+              <div class="project__title">template-two-Kasper</div>
+              <div class="project__desc">template HTML and CSS</div>
+              <div class="project__badges">
+                <span class="project__badge">HTML5</span>
+                <span class="project__badge">CSS3</span>
+              </div>
+              <a
+                class="project__btn"
+                target="_blank"
+                href="https://elnakhlawi.github.io/template-two-Kasper/"
+                >View Demo</a
+              >
+            </div>
           </div>
           <div class="project">
-            <h3>template-three-World</h3>
-            <p>
-              this template uses HTML and CSS as practice and exercise for them.
-            </p>
-            <a target="_blank"
-              href="https://elnakhlawi.github.io/template-three-M-Elnakhlwy--World/"
-              >من هنا</a
-            >
+            <img
+              class="project__image"
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+              alt="template-three-World Preview"
+            />
+            <div class="project__body">
+              <div class="project__title">template-three-World</div>
+              <div class="project__desc">
+                This template uses HTML and CSS as practice and exercise for
+                them.
+              </div>
+              <div class="project__badges">
+                <span class="project__badge">HTML5</span>
+                <span class="project__badge">CSS3</span>
+              </div>
+              <a
+                class="project__btn"
+                target="_blank"
+                href="https://elnakhlawi.github.io/template-three-M-Elnakhlwy--World/"
+                >View Demo</a
+              >
+            </div>
           </div>
           <div class="project">
-            <h3>template-four-dashboard</h3>
-            <p>HTML And CSS Practice On Template dashboard</p>
-            <a  target="_blank"href="https://elnakhlawi.github.io/template-four-dashboard/"
-              >من هنا</a
-            >
+            <img
+              class="project__image"
+              src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80"
+              alt="template-four-dashboard Preview"
+            />
+            <div class="project__body">
+              <div class="project__title">template-four-dashboard</div>
+              <div class="project__desc">
+                HTML And CSS Practice On Template dashboard
+              </div>
+              <div class="project__badges">
+                <span class="project__badge">HTML5</span>
+                <span class="project__badge">CSS3</span>
+              </div>
+              <a
+                class="project__btn"
+                target="_blank"
+                href="https://elnakhlawi.github.io/template-four-dashboard/"
+                >View Demo</a
+              >
+            </div>
           </div>
           <div class="project">
-            <h3>Coffee-Shop</h3>
-            <p>Coffee shop with HTML and Css and JS</p>
-            <a target="_blank" href="https://elnakhlawi.github.io/Coffee-Shop/">من هنا</a>
+            <img
+              class="project__image"
+              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80"
+              alt="Coffee-Shop Preview"
+            />
+            <div class="project__body">
+              <div class="project__title">Coffee-Shop</div>
+              <div class="project__desc">
+                Coffee shop with HTML and CSS and JS
+              </div>
+              <div class="project__badges">
+                <span class="project__badge">HTML5</span>
+                <span class="project__badge">CSS3</span>
+                <span class="project__badge">JavaScript</span>
+              </div>
+              <a
+                class="project__btn"
+                target="_blank"
+                href="https://elnakhlawi.github.io/Coffee-Shop/"
+                >View Demo</a
+              >
+            </div>
           </div>
         </div>
       </div>
+      <div class="contact-us form-section">
+        <h2>Contact Me</h2>
+        <form id="contactForm" autocomplete="off">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your Email"
+            required
+          />
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="Your Phone"
+            required
+          />
+          <textarea
+            name="message"
+            id="msgInput"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <p id="formMsg"></p>
+      </d iv>
     </div>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-copy">
+          &copy; 2024 Mahmoud ElNakhlawy. All rights reserved.
+        </div>
+        <div class="footer-social">
+          <a
+            href="https://github.com/elnakhlawi"
+            target="_blank"
+            aria-label="GitHub"
+            class="footer-social-link"
+          >
+            <svg
+              width="22"
+              height="22"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.686-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.397.1 2.65.64.699 1.028 1.593 1.028 2.686 0 3.847-2.338 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.577.688.479C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://linkedin.com/in/elnakhlawi"
+            target="_blank"
+            aria-label="LinkedIn"
+            class="footer-social-link"
+          >
+            <svg
+              width="22"
+              height="22"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.784 1.764-1.75 1.764zm15.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.6v5.596z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
