@@ -1,0 +1,8 @@
+@media (max-width:900px) {
+  .site-logo{
+    display: none;
+  }
+  .header-content{
+    justify-content: center;
+  }
+}
